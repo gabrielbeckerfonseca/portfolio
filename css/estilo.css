@@ -1,0 +1,120 @@
+/* Configuração geral para o body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Configuração do header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Configuração do menu de navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Configuração do main */
+main {
+    padding: 2em;
+    text-align: justify;
+}
+
+/* Configuração do footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Configuração do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center; /* Centraliza o conteúdo dentro do formulário */
+}
+
+label, input, textarea, button {
+    margin-bottom: 10px; /* Adiciona espaço entre os elementos */
+    width: 100%; /* Faz com que os inputs e textarea ocupem toda a largura do formulário */
+}
+
+input, textarea {
+    padding: 10px; /* Adiciona espaçamento interno nos inputs e textarea */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%; /* Opcional: Define a largura do botão como 50% */
+    align-self: center; /* Centraliza o botão no eixo flex */
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Configuração do container com imagem e texto */
+.container {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o conteúdo ao centro */
+    justify-content: space-between; /* Cria espaço entre a imagem e o texto */
+    margin: 20px; /* Adiciona margem ao redor do container */
+}
+
+/* Configuração da imagem */
+.imagem {
+    flex: 1; /* Faz com que a imagem ocupe uma parte proporcional do espaço */
+    max-width: 50%; /* Limita a largura máxima da imagem */
+    margin-right: 20px; /* Adiciona um espaço entre a imagem e o texto */
+}
+
+.imagem img {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura do seu container */
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 400px; /* Define a altura máxima da imagem */
+    object-fit: cover; /* Ajusta a imagem para cobrir a área sem distorção */
+    border-radius: 8px; /* Adiciona bordas arredondadas à imagem */
+}
+
+/* Configuração do texto */
+.texto {
+    flex: 1; /* Faz com que o texto ocupe uma parte proporcional do espaço */
+    max-width: 50%; /* Limita a largura máxima do texto */
+    margin-bottom: 1.5em; /* Adiciona espaçamento entre os parágrafos */
+}
+
+h2 {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 0; /* Remove a margem superior, se necessário */
+    margin-bottom: 20px; /* Adiciona um espaço abaixo do título */
+}
