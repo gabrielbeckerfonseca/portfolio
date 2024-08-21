@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+    <!-- Cabeçalho da página -->
     <header>
         <nav>
             <ul>
+                <!-- Lista de links para navegação no site -->
                 <li><a href="index.html">Início</a></li>
                 <li><a href="sobre.html">Sobre Mim</a></li>
                 <li><a href="formacao.html">Formação</a></li>
@@ -18,7 +20,7 @@
             </ul>
         </nav>
     </header>
-
+    <!-- Formulário da página -->
     <main>
         <div class="h2">
             <h2>Formulário de Contato</h2>
@@ -35,14 +37,10 @@
             
             <button type="submit">Enviar</button>
         </form>
-
-        <!-- Área para a mensagem de sucesso -->
         <div class="h2">
             <p id="mensagem-sucesso" style="display: none; color: green; margin-top: 20px;">Mensagem enviada com sucesso!</p>
         </div>
-        
     </main>
-
     <footer>
         <p>&copy; 2024</p>
     </footer>
@@ -55,7 +53,7 @@
             // Exibe a mensagem de sucesso
             document.getElementById('mensagem-sucesso').style.display = 'block';
             
-            // Opcional: Limpar o formulário após o envio
+            // Limpa o formulário após o envio
             document.getElementById('form-contato').reset();
         });
     </script>
