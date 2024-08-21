@@ -41,13 +41,12 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 1em 0;
+    padding: auto;
     position: fixed;
     width: 100%;
     bottom: 0;
 }
 
-/* Configuração do formulário */
 form {
     display: flex;
     flex-direction: column;
@@ -92,29 +91,53 @@ button:hover {
 }
 
 /* Configuração da imagem */
-.imagem {
-    flex: 1; /* Faz com que a imagem ocupe uma parte proporcional do espaço */
-    max-width: 50%; /* Limita a largura máxima da imagem */
-    margin-right: 20px; /* Adiciona um espaço entre a imagem e o texto */
-}
-
 .imagem img {
     width: 100%; /* Faz com que a imagem ocupe toda a largura do seu container */
     height: auto; /* Mantém a proporção da imagem */
-    max-height: 400px; /* Define a altura máxima da imagem */
-    object-fit: cover; /* Ajusta a imagem para cobrir a área sem distorção */
+    max-height: 300px; /* Define a altura máxima da imagem */
     border-radius: 8px; /* Adiciona bordas arredondadas à imagem */
+    object-fit: contain; /* Garante que a imagem não seja cortada */
 }
 
 /* Configuração do texto */
 .texto {
-    flex: 1; /* Faz com que o texto ocupe uma parte proporcional do espaço */
-    max-width: 50%; /* Limita a largura máxima do texto */
-    margin-bottom: 1.5em; /* Adiciona espaçamento entre os parágrafos */
+    flex: 1;
+    padding: 0 20px;
 }
 
-h2 {
+.h2 {
     text-align: center; /* Centraliza o texto */
     margin-top: 0; /* Remove a margem superior, se necessário */
     margin-bottom: 20px; /* Adiciona um espaço abaixo do título */
 }
+
+a {
+    text-decoration: none;  /* Remove o sublinhado */
+    color: black;           /* Define a cor padrão do link */
+  }
+  
+a:hover, a:active {
+    color: rgb(96, 96, 152);        /* Cor ao passar o mouse ou clicar no link */
+  }
+  
+  
+  
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Coloca os itens em coluna para telas menores */
+        align-items: center; /* Centraliza os itens em tela menor */
+    }
+
+    .imagem img {
+        max-width: 80%; /* Ajusta a largura da imagem para telas menores */
+        margin-bottom: 20px;
+        object-fit: contain; /* Garante que a imagem não seja cortada */
+    }
+
+    .texto {
+        text-align: center;
+    }
+}
+
+
